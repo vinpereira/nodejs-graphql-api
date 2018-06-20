@@ -1,6 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.userResolvers = {
+    User: {
+        posts: (parent, { first = 10, offset = 0 }, { db }, info) => {
+            return db.Post.findAll({
+                where: { author: parent.get('id') },
+                limit: first,
+                offset: offset
+            });
+        }
+    },
     Query: {
         users: (parent, { first = 10, offset = 0 }, { db }, info) => {
             return db.User
