@@ -29,5 +29,38 @@ exports.postResolvers = {
                 return post;
             });
         }
+    },
+    Mutation: {
+        createPost: (parent, { input }, { db }, info) => {
+            return db.sequelize.transaction((t) => {
+                return db.Post.create(input, { transaction: t });
+            });
+        },
+        updatePost: (parent, { id, input }, { db }, info) => {
+            id = parseInt(id);
+            return db.sequelize.transaction((t) => {
+                return db.Post
+                    .findById(id)
+                    .then((post) => {
+                    if (!post)
+                        throw new Error(`Post with id ${id} not found!`);
+                    return post.update(input, { transaction: t });
+                });
+            });
+        },
+        deletePost: (parent, { id }, { db }, info) => {
+            id = parseInt(id);
+            return db.sequelize.transaction((t) => {
+                return db.Post
+                    .findById(id)
+                    .then((post) => {
+                    if (!post)
+                        throw new Error(`Post with id ${id} not found!`);
+                    return post
+                        .destroy({ transaction: t })
+                        .then((post) => !!post);
+                });
+            });
+        }
     }
 };
