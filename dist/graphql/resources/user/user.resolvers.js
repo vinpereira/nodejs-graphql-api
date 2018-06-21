@@ -23,6 +23,7 @@ exports.userResolvers = {
                 .catch(utils_1.handleError);
         },
         user: (parent, { id }, { db }, info) => {
+            id = parseInt(id);
             return db.User
                 .findById(id)
                 .then((user) => {
