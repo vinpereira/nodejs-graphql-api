@@ -1,0 +1,623 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-06-25T11:39:25.091Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_0d2d8b2ea0be4ad7a984640bffd17db5",
+			"created": 1529590445478,
+			"description": "",
+			"modified": 1529926679388,
+			"name": "GraphQL Node API",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_94a94484ef07408098c60431c88e4d35",
+			"color": null,
+			"created": 1529590445522,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1529590445522,
+			"name": "New Environment",
+			"parentId": "wrk_0d2d8b2ea0be4ad7a984640bffd17db5",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_2d37432be72d44ea9169d9e8cc93ad7c",
+			"cookies": [],
+			"created": 1529590445826,
+			"modified": 1529590445826,
+			"name": "Default Jar",
+			"parentId": "wrk_0d2d8b2ea0be4ad7a984640bffd17db5",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_2b205d9c1156489c9d12f73ee00aeccd",
+			"created": 1529590517768,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590517768,
+			"modified": 1529590517768,
+			"name": "GraphQL",
+			"parentId": "wrk_0d2d8b2ea0be4ad7a984640bffd17db5",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_554a954b951d4502a9516431067ef465",
+			"color": "#cb697e",
+			"created": 1529926693875,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1529926715355,
+			"name": "Dev",
+			"parentId": "env_94a94484ef07408098c60431c88e4d35",
+			"_type": "environment"
+		},
+		{
+			"_id": "fld_7c744b3f45a3421b9aa92c7c58dcc046",
+			"created": 1529685447637,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590530334,
+			"modified": 1529685455854,
+			"name": "User",
+			"parentId": "fld_2b205d9c1156489c9d12f73ee00aeccd",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_d42ebe75d24e40aab9fd2290f5d183e2",
+			"created": 1529685468464,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590530434,
+			"modified": 1529685488417,
+			"name": "Post",
+			"parentId": "fld_2b205d9c1156489c9d12f73ee00aeccd",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_940e9b6d1e3341e19301fd8de743d791",
+			"created": 1529685478915,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590530484,
+			"modified": 1529685490539,
+			"name": "Comment",
+			"parentId": "fld_2b205d9c1156489c9d12f73ee00aeccd",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_4d44a38223a442c088e20d8243c0d6c8",
+			"created": 1529690856129,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590530484,
+			"modified": 1529690883290,
+			"name": "Queries",
+			"parentId": "fld_7c744b3f45a3421b9aa92c7c58dcc046",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_7139f729a54c49fda6b8670c57a04875",
+			"created": 1529690867137,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529590530434,
+			"modified": 1529690876082,
+			"name": "Mutations",
+			"parentId": "fld_7c744b3f45a3421b9aa92c7c58dcc046",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_c3189302704242169b9b5896e23d6c31",
+			"created": 1529693290302,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529693290302,
+			"modified": 1529693304286,
+			"name": "Mutations",
+			"parentId": "fld_d42ebe75d24e40aab9fd2290f5d183e2",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_484081881a5149f59e0d1c3c7624c43b",
+			"created": 1529693297582,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529693297582,
+			"modified": 1529693297582,
+			"name": "Queries",
+			"parentId": "fld_d42ebe75d24e40aab9fd2290f5d183e2",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_943b4d1abbc84561a39e1df2e2445de6",
+			"created": 1529925378259,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529925388606,
+			"modified": 1529925391152,
+			"name": "Queries",
+			"parentId": "fld_940e9b6d1e3341e19301fd8de743d791",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_f5f160883c584f99835b93852793dd62",
+			"created": 1529925388556,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1529925388556,
+			"modified": 1529925388556,
+			"name": "Mutations",
+			"parentId": "fld_940e9b6d1e3341e19301fd8de743d791",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_6f164c1674cc456a91fec8e564cf8c25",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query getUsersList($first: Int, $offset: Int) {\\n  users(first: $first, offset: $offset) {\\n\\t\\tid\\n    name\\n\\t\\temail\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n  }\\n}\\n\",\"variables\":{\"first\":3,\"offset\":0},\"operationName\":\"getUsersList\"}"
+			},
+			"created": 1529590530283,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_030823fc195347bebcfaee87bbc0e8ff",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530284,
+			"method": "POST",
+			"modified": 1529691885255,
+			"name": "Users",
+			"parameters": [],
+			"parentId": "fld_4d44a38223a442c088e20d8243c0d6c8",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_284ababe732f4caa8088472d20a3887e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query getUser($id: ID!) {\\n  user(id: $id) {\\n\\t\\tid\\n\\t\\tname\\n\\t\\temail\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t}\\n}\\n\",\"variables\":{\"id\":2},\"operationName\":\"getUser\"}"
+			},
+			"created": 1529690553097,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b49655e5bcb145c295cddf6f3831e031",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530334,
+			"method": "POST",
+			"modified": 1529690860449,
+			"name": "User",
+			"parameters": [],
+			"parentId": "fld_4d44a38223a442c088e20d8243c0d6c8",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e0c6c62601b84014b6096ad0e1cecd11",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation createUser($name: String!, $email: String!, $password: String!) {\\n\\tcreateUser(input: {\\n\\t\\tname: $name,\\n\\t\\temail: $email,\\n\\t\\tpassword: $password\\n\\t}) {\\n\\t\\tid\\n\\t\\tname\\n\\t\\temail\\n\\t\\tcreatedAt\\n\\t}\\n}\",\"variables\":{\"name\":\"Rogério\",\"email\":\"rogerio@email.com\",\"password\":\"123\"},\"operationName\":\"createUser\"}"
+			},
+			"created": 1529690830425,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5474ed8e876f4898ba878eb90225a72c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530334,
+			"method": "POST",
+			"modified": 1529691535851,
+			"name": "Create User",
+			"parameters": [],
+			"parentId": "fld_7139f729a54c49fda6b8670c57a04875",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_209b8861177e4c1394eb68dbf592c501",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation updateUser($id: ID!, $name: String!, $email: String!, $photo: String!) {\\n\\tupdateUser(id: $id, input: {\\n\\t\\tname: $name,\\n\\t\\temail: $email,\\n\\t\\tphoto: $photo\\n\\t}) {\\n\\t\\tid\\n\\t\\tname\\n\\t\\temail\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t}\\n}\",\"variables\":{\"id\":3,\"name\":\"Carlos Rogério Pinto\",\"email\":\"rogerio@email.com\",\"photo\":\"photo\"},\"operationName\":\"updateUser\"}"
+			},
+			"created": 1529691529171,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6465d46dc26240148be6477ad7ac249d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530321.5,
+			"method": "POST",
+			"modified": 1529691779378,
+			"name": "Update User",
+			"parameters": [],
+			"parentId": "fld_7139f729a54c49fda6b8670c57a04875",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_475b69bda0704994af4d33fb18e46b74",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation updateUserPassword($id: ID!, $password: String!) {\\n\\tupdateUserPassword(id: $id, input: {\\n\\t\\tpassword: $password\\n\\t})\\n}\",\"variables\":{\"id\":3,\"password\":\"123\"},\"operationName\":\"updateUserPassword\"}"
+			},
+			"created": 1529691774900,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_74b1305ede104097b837d30ced47454f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530309,
+			"method": "POST",
+			"modified": 1529691873507,
+			"name": "Update User Password",
+			"parameters": [],
+			"parentId": "fld_7139f729a54c49fda6b8670c57a04875",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1df7e973073548aaae6520c4173212d4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation deleteUser($id: ID!){\\n\\tdeleteUser(id: $id)\\n}\",\"variables\":{\"id\":3},\"operationName\":\"deleteUser\"}"
+			},
+			"created": 1529691916188,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_55312b31e9444505a3b31ccc4f9e07ed",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529590530327.75,
+			"method": "POST",
+			"modified": 1529693066876,
+			"name": "Delete User",
+			"parameters": [],
+			"parentId": "fld_7139f729a54c49fda6b8670c57a04875",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7ec0fa0cff764f4cab549c0315d901d9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation createPost($title: String!, $content: String!, $photo: String!, $author: Int!) {\\n\\tcreatePost(input: {\\n\\t\\ttitle: $title,\\n\\t\\tcontent: $content,\\n\\t\\tphoto: $photo,\\n\\t\\tauthor: $author\\n\\t}) {\\n\\t\\tid\\n\\t\\ttitle\\n\\t\\tcontent\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tauthor {\\n\\t\\t\\tid\\n\\t\\t\\tname\\n\\t\\t\\temail\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"title\":\"Vai vai vai vai\",\"content\":\"foi\",\"photo\":\"photo\",\"author\":2},\"operationName\":\"createPost\"}"
+			},
+			"created": 1529693105133,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_f2b31bbe688842c19b85d8628c0d79b5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529693689570,
+			"method": "POST",
+			"modified": 1529693778707,
+			"name": "Create Post",
+			"parameters": [],
+			"parentId": "fld_c3189302704242169b9b5896e23d6c31",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4d5d9aa375904ac7acfecdd010d902da",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation updatePost($id: ID!, $title: String!, $content: String!, $photo: String!, $author: Int!) {\\n\\tupdatePost(id: $id, input: {\\n\\t\\ttitle: $title,\\n\\t\\tcontent: $content,\\n\\t\\tphoto: $photo,\\n\\t\\tauthor: $author\\n\\t}) {\\n\\t\\tid\\n\\t\\ttitle\\n\\t\\tcontent\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tauthor {\\n\\t\\t\\tid\\n\\t\\t\\tname\\n\\t\\t\\temail\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"id\":1,\"title\":\"Testing Again\",\"content\":\"Ha Ha\",\"photo\":\"photo\",\"author\":2},\"operationName\":\"updatePost\"}"
+			},
+			"created": 1529693508226,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_106b0e19f02f45b9b9d1ab13ab3a23fa",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529693508226,
+			"method": "POST",
+			"modified": 1529693670957,
+			"name": "Update Post",
+			"parameters": [],
+			"parentId": "fld_c3189302704242169b9b5896e23d6c31",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_503700b59ffe49d8bad50e08c8338726",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation deletePost($id: ID!) {\\n\\tdeletePost(id: $id)\\n}\",\"variables\":{\"id\":1},\"operationName\":\"deletePost\"}"
+			},
+			"created": 1529693689520,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_2a0684add5ee45bbbf77cb61c8ef5b88",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529693689520,
+			"method": "POST",
+			"modified": 1529693725970,
+			"name": "Delete Post",
+			"parameters": [],
+			"parentId": "fld_c3189302704242169b9b5896e23d6c31",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_097500a171ea429a977fbeb26d99e070",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query getPostsList($first: Int, $offset: Int) {\\n\\t posts(first: $first, offset: $offset) {\\n\\t\\tid\\n\\t\\ttitle\\n\\t\\tcontent\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tauthor {\\n\\t\\t\\tid\\n\\t\\t\\tname\\n\\t\\t\\temail\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"first\":5,\"offset\":0},\"operationName\":\"getPostsList\"}"
+			},
+			"created": 1529693310869,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_64673605fc894d2a826e7b6c899e3f5a",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529693310869,
+			"method": "POST",
+			"modified": 1529693418230,
+			"name": "Posts",
+			"parameters": [],
+			"parentId": "fld_484081881a5149f59e0d1c3c7624c43b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9b151e13686548868fe1cb2926300c5d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query getPost($id: ID!) {\\n\\t post(id: $id) {\\n\\t\\tid\\n\\t\\ttitle\\n\\t\\tcontent\\n\\t\\tphoto\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tauthor {\\n\\t\\t\\tid\\n\\t\\t\\tname\\n\\t\\t\\temail\\n\\t\\t}\\n\\t\\tcomments {\\n\\t\\t\\tid\\n\\t\\t\\tcomment\\n\\t\\t\\tcreatedAt\\n\\t\\t\\tupdatedAt\\n\\t\\t\\tuser {\\n\\t\\t\\t\\tname\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"id\":4},\"operationName\":\"getPost\"}"
+			},
+			"created": 1529693430409,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5828269eb7fd478d9d47f2e6af641b43",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529693430409,
+			"method": "POST",
+			"modified": 1529926168413,
+			"name": "Post",
+			"parameters": [],
+			"parentId": "fld_484081881a5149f59e0d1c3c7624c43b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_541f3c04c35048cb9c56761defa49a47",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"query commentsByPost($postId: ID!, $first: Int, $offset: Int) {\\n\\tcommentsByPost(postId: $postId, first: $first, offset: $offset) {\\n\\t\\tid\\n\\t\\tcomment\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tuser {\\n\\t\\t\\tname\\n\\t\\t}\\n\\t\\tpost {\\n\\t\\t\\ttitle\\n\\t\\t\\tcontent\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"postId\":2,\"first\":5,\"offset\":0},\"operationName\":\"commentsByPost\"}"
+			},
+			"created": 1529925406823,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_af57e22ac9544b26a7bc24ff0466062a",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529925406823,
+			"method": "POST",
+			"modified": 1529926543655,
+			"name": "Comments by Post",
+			"parameters": [],
+			"parentId": "fld_943b4d1abbc84561a39e1df2e2445de6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d2268f998b5d4687842edfd7674a06ed",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation createComment($comment: String!, $post: Int!, $user: Int!) {\\n\\tcreateComment(input: {\\n\\t\\tcomment: $comment,\\n\\t\\tpost: $post,\\n\\t\\tuser: $user\\n\\t}) {\\n\\t\\tid\\n\\t\\tcomment\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t\\tuser {\\n\\t\\t\\tid\\n\\t\\t\\tname\\n\\t\\t\\temail\\n\\t\\t}\\n\\t\\tpost {\\n\\t\\t\\tid\\n\\t\\t\\ttitle\\n\\t\\t\\tcontent\\n\\t\\t}\\n\\t}\\n}\",\"variables\":{\"comment\":\"Testing\",\"post\":4,\"user\":1},\"operationName\":\"createComment\"}"
+			},
+			"created": 1529925418202,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_55e6b47a08bd4a9eae9096aa73506dfa",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529925870717,
+			"method": "POST",
+			"modified": 1529926153506,
+			"name": "Create Comment",
+			"parameters": [],
+			"parentId": "fld_f5f160883c584f99835b93852793dd62",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b363e212e67247b5aced5b1a5086e9cd",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation updateComment($id: ID!, $comment: String!, $post: Int!, $user: Int!) {\\n\\tupdateComment(id: $id, input: {\\n\\t\\tcomment: $comment,\\n\\t\\tpost: $post,\\n\\t\\tuser: $user\\n\\t}) {\\n\\t\\tid\\n\\t\\tcomment\\n\\t\\tcreatedAt\\n\\t\\tupdatedAt\\n\\t}\\n}\",\"variables\":{\"id\":1,\"comment\":\"UPDATED: My more extreme relevant comment\",\"post\":2,\"user\":2},\"operationName\":\"updateComment\"}"
+			},
+			"created": 1529925870667,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_94d2c583bdbe44739cea583e215b3d89",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529925870667,
+			"method": "POST",
+			"modified": 1529926023558,
+			"name": "Update Comment",
+			"parameters": [],
+			"parentId": "fld_f5f160883c584f99835b93852793dd62",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		},
+		{
+			"_id": "req_921078a9d70547b9ac81c08f3edd638a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/graphql",
+				"text": "{\"query\":\"mutation deleteComment($id: ID!) {\\n\\tdeleteComment(id: $id)\\n}\",\"variables\":{\"id\":5},\"operationName\":\"deleteComment\"}"
+			},
+			"created": 1529926058199,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c4df7b98cc3047abb5d976094e7ccbf4",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529925870692,
+			"method": "POST",
+			"modified": 1529926162704,
+			"name": "Delete Comment",
+			"parameters": [],
+			"parentId": "fld_f5f160883c584f99835b93852793dd62",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/graphql",
+			"_type": "request"
+		}
+	]
+}
