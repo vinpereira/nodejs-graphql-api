@@ -18,7 +18,7 @@ exports.extractJwtMiddleware = () => {
                 .findById(decoded.sub, { attributes: ['id', 'email'] })
                 .then((user) => {
                 if (user) {
-                    req['context']['user'] = {
+                    req['context']['authUser'] = {
                         id: user.get('id'),
                         email: user.get('email')
                     };
