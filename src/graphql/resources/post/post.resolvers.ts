@@ -4,15 +4,16 @@ import { Transaction } from "sequelize";
 import { authResolvers } from "../../composable/auth.resolver";
 import { AuthUser } from "../../../interfaces/AuthUserInterface";
 import { compose } from "../../composable/composable.resolver";
+import { DataLoaders } from "../../../interfaces/DataLoadersInterface";
 import { DbConnection } from "../../../interfaces/DbConnectionInterface";
 import { handleError, throwError } from "../../../utils/utils";
 import { PostInstance } from "../../../models/PostModel";
 
 export const postResolvers = {
     Post: {
-        author: (parent, args, { db }: { db: DbConnection }, info: GraphQLResolveInfo) => {
-            return db.User
-                .findById(parent.get('author'))
+        author: (parent, args, { db, dataloaders: { userLoader } }: { db: DbConnection, dataloaders: DataLoaders }, info: GraphQLResolveInfo) => {
+            return userLoader
+                .load(parent.get('author'))
                 .catch(handleError);
         },
 

@@ -5,9 +5,9 @@ const composable_resolver_1 = require("../../composable/composable.resolver");
 const utils_1 = require("../../../utils/utils");
 exports.postResolvers = {
     Post: {
-        author: (parent, args, { db }, info) => {
-            return db.User
-                .findById(parent.get('author'))
+        author: (parent, args, { db, dataloaders: { userLoader } }, info) => {
+            return userLoader
+                .load(parent.get('author'))
                 .catch(utils_1.handleError);
         },
         comments: (parent, { first = 10, offset = 0 }, { db }, info) => {

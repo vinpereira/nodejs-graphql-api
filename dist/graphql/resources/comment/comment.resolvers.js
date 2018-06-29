@@ -5,14 +5,14 @@ const composable_resolver_1 = require("../../composable/composable.resolver");
 const utils_1 = require("../../../utils/utils");
 exports.commentResolvers = {
     Comment: {
-        user: (parent, args, { db }, info) => {
-            return db.User
-                .findById(parent.get('user'))
+        user: (parent, args, { db, dataloaders: { userLoader } }, info) => {
+            return userLoader
+                .load(parent.get('user'))
                 .catch(utils_1.handleError);
         },
-        post: (parent, args, { db }, info) => {
-            return db.Post
-                .findById(parent.get('post'))
+        post: (parent, args, { db, dataloaders: { postLoader } }, info) => {
+            return postLoader
+                .load(parent.get('post'))
                 .catch(utils_1.handleError);
         }
     },
