@@ -5,25 +5,26 @@ const composable_resolver_1 = require("../../composable/composable.resolver");
 const utils_1 = require("../../../utils/utils");
 exports.commentResolvers = {
     Comment: {
-        user: (parent, args, { db, dataloaders: { userLoader } }, info) => {
+        user: (comment, args, { db, dataloaders: { userLoader } }, info) => {
             return userLoader
-                .load(parent.get('user'))
+                .load(comment.get('user'))
                 .catch(utils_1.handleError);
         },
-        post: (parent, args, { db, dataloaders: { postLoader } }, info) => {
+        post: (comment, args, { db, dataloaders: { postLoader } }, info) => {
             return postLoader
-                .load(parent.get('post'))
+                .load(comment.get('post'))
                 .catch(utils_1.handleError);
         }
     },
     Query: {
-        commentsByPost: (parent, { postId, first = 10, offset = 0 }, { db }, info) => {
+        commentsByPost: (parent, { postId, first = 10, offset = 0 }, context, info) => {
             postId = parseInt(postId);
-            return db.Comment
+            return context.db.Comment
                 .findAll({
                 where: { post: postId },
                 limit: first,
-                offset: offset
+                offset: offset,
+                attributes: context.requestedFields.getFields(info)
             })
                 .catch(utils_1.handleError);
         }
