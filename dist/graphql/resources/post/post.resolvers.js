@@ -7,7 +7,7 @@ exports.postResolvers = {
     Post: {
         author: (post, args, { db, dataloaders: { userLoader } }, info) => {
             return userLoader
-                .load(post.get('author'))
+                .load({ key: post.get('author'), info: info })
                 .catch(utils_1.handleError);
         },
         comments: (post, { first = 10, offset = 0 }, context, info) => {
