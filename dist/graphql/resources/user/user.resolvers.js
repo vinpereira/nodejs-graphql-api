@@ -11,7 +11,7 @@ exports.userResolvers = {
                 where: { author: user.get('id') },
                 limit: first,
                 offset: offset,
-                attributes: context.requestedFields.getFields(info, { keep: ['id'], exclude: ['posts'] })
+                attributes: context.requestedFields.getFields(info, { keep: ['id'], exclude: ['comments'] })
             })
                 .catch(utils_1.handleError);
         }
