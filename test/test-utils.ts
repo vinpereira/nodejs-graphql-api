@@ -7,7 +7,7 @@ import db from './../src/models/index';
 chai.use(chaiHttp);
 const expect = chai.expect;
 
-const randomError = error => {
+const handleError = error => {
     const message: string = (error.response) ? error.response.res.text : error.message || error;
 
     return Promise.reject(`${error.name}: ${message}`);
@@ -18,5 +18,5 @@ export {
     db,
     chai,
     expect,
-    randomError
+    handleError
 }
