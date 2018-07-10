@@ -26,7 +26,7 @@ export const commentResolvers = {
     },
 
     Query: {
-        commentsByPost: (parent, { postId, first = 10, offset = 0 }, context: ResolverContext, info: GraphQLResolveInfo) => {
+        commentsByPost: compose()((parent, { postId, first = 10, offset = 0 }, context: ResolverContext, info: GraphQLResolveInfo) => {
             postId = parseInt(postId);
 
             return context.db.Comment
@@ -34,10 +34,10 @@ export const commentResolvers = {
                     where: { post: postId },
                     limit: first,
                     offset: offset,
-                    attributes: context.requestedFields.getFields(info)
+                    attributes: context.requestedFields.getFields(info, { keep: undefined })
                 })
                 .catch(handleError);
-        }
+        })
     },
 
     Mutation: {

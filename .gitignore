@@ -1,2 +1,6 @@
 # Nodejs modules
 node_modules/
+
+# NYC test
+.nyc_output/
+coverage/

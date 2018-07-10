@@ -82,9 +82,7 @@ describe('Comment', () => {
                             }
                         `,
                         variables: {
-                            postId: postId,
-                            first: 2,
-                            offset: 1
+                            postId: postId
                         }
                     };
 
