@@ -4,6 +4,7 @@ const compression = require("compression");
 const cors = require("cors");
 const express = require("express");
 const graphqlHTTP = require("express-graphql");
+const helmet = require("helmet");
 const models_1 = require("./models");
 const schema_1 = require("./graphql/schema");
 const DataLoaderFactory_1 = require("./graphql/dataloaders/DataLoaderFactory");
@@ -28,6 +29,7 @@ class App {
             optionsSuccessStatus: 204
         }));
         this.express.use(compression());
+        this.express.use(helmet());
         this.express.use('/graphql', extract_jwt_middleware_1.extractJwtMiddleware(), (req, res, next) => {
             req['context']['db'] = models_1.default;
             req['context']['dataloaders'] = this.dataLoaderFactory.getLoaders();
