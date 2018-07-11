@@ -17,17 +17,17 @@ exports.commentResolvers = {
         }
     },
     Query: {
-        commentsByPost: (parent, { postId, first = 10, offset = 0 }, context, info) => {
+        commentsByPost: composable_resolver_1.compose()((parent, { postId, first = 10, offset = 0 }, context, info) => {
             postId = parseInt(postId);
             return context.db.Comment
                 .findAll({
                 where: { post: postId },
                 limit: first,
                 offset: offset,
-                attributes: context.requestedFields.getFields(info)
+                attributes: context.requestedFields.getFields(info, { keep: undefined })
             })
                 .catch(utils_1.handleError);
-        }
+        })
     },
     Mutation: {
         createComment: composable_resolver_1.compose(...auth_resolver_1.authResolvers)((parent, { input }, { db, authUser }, info) => {
